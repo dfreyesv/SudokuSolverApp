@@ -1,0 +1,35 @@
+MainScreen:
+
+<MainScreen>:
+    size_hint: None, 1
+    width: 400
+    #height: 2000
+    orientation: "vertical"
+    Label:
+        size_hint: 1, 0.2
+        font_size: "50sp"
+        text: "Sudoku Solver"
+    MainGrid:
+        id: main_grid
+        size_hint: 1, 0.7
+    Label:
+        text: "* Fill empty cells with the numbers of the puzzle.\n* Press Solve to get the solution of the puzzle.\n* Press Clear to clean the board for a new puzzle."
+        size_hint: 1, 0.15
+    BoxLayout:
+        size_hint: 1, 0.15
+        padding: 10, 10, 10, 10
+        spacing: 30
+        Button:
+            text: "SOLVE"
+            on_press: root.solve_click()
+            size_hint: 0.5, 1
+            #padding: 20, 20, 20, 20
+        Button:
+            text: "CLEAR"
+            on_press: root.clear_click()
+            size_hint: 0.5, 1
+            #padding: 20, 20, 20, 20
+    
+        
+
+        
