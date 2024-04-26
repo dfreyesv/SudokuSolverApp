@@ -211,8 +211,8 @@ class SolutionFinder:
         return True
 
 
-class SudokuSolverApp(App):
+class sudokusolverapp(App):
     """App to solve sudoku puzzle"""
 
 
-SudokuSolverApp().run()
+sudokusolverapp().run()
